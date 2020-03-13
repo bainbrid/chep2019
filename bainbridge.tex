@@ -1,6 +1,12 @@
 \documentclass{webofc}
 \usepackage[varg]{txfonts}
 \usepackage{amsmath}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
+\pagestyle{plain}
 
 % Common
 \newcommand{\kjpsi}{\ensuremath{(\textrm{J}/\Psi{\rightarrow})}\xspace}
@@ -84,32 +90,34 @@
 
 In recent years, a number of experimental results related to lepton
 universality tests in b hadron decays have yielded
-measurements~\cite{} that are in tension with expected values from the
-standard model. The cited measurements, performed by the
-BaBar~\cite{babar}, Belle~\cite{belle}, and LHCb~\cite{lhcb}
-Collaborations, are for both \bsll and \bclnu transitions and the
-individual measurements exhibit deviations in the range 2--4$\sigma$.
-Collectively, they may be the first indications of the violation of
-lepton flavour universality (LFU)~\cite{hflav-rdrdst,
-  altmannshofer}. The confirmation of LFU violation would be a
-striking proof of the existence of physics beyond the SM. A key
-experimental observable \rk is defined by the double ratio %
+measurements~\cite{rk-lhcb-1, rkst-lhcb-1, rkst-belle-1, rd-babar-1,
+  rd-belle-1, rd-lhcb-1, p5prime-lhcb-1, p5prime-belle-1, ang-babar-1}
+that are in tension with expected values from the standard model. The
+cited measurements, performed by the BaBar~\cite{babar},
+Belle~\cite{belle}, and LHCb~\cite{lhcb} Collaborations, are for both
+\bsll and \bclnu transitions and the individual measurements exhibit
+deviations in the range 2--4$\sigma$.  Collectively, they may be the
+first indications of the violation of lepton flavour universality
+(LFU)~\cite{hflav-rdrdst, altmannshofer}. The confirmation of LFU
+violation would be a striking proof of the existence of physics beyond
+the SM. A key experimental observable \rk is defined by the double
+ratio %
 \begin{equation}
   \rk =
   \frac{\mathcal{B}[\btokmm]\,/\,\mathcal{B}[\btokjpsimm]}{\mathcal{B}[\btokee]\,/\,\mathcal{B}[\btokjpsiee]}, 
   \label{equ:1}
 \end{equation}
 where the numerator and denominator are ratios of the branching
-fractions for the resonant \btokjpsill and nonresonant \btokll decays
+fractions for the nonresonant \btokll and resonant \btokjpsill decays
 in the muonic (electronic) channel, respectively.\footnote{The
   \btokstarll and \btokstarjpsill notation implies charge
   conjugation.} The \rkst observable is similarly defined using the
-branching fractions for the resonant \btokstll and nonresonant
+branching fractions for the nonresonant \btokstll and resonant
 \btokstjpsill decays. The \rk and \rkst observables are known with
-high theoretical precision~\cite{} as a function of the 4-momentum
-transfer of the dilepton system, $q^2(\ell\ell)$, and thus are ideal
-probes for the presence of new-physics processes in rare decays due to
-\bsll transitions.
+high theoretical precision~\cite{theory1, theory2} as a function of
+the 4-momentum transfer of the dilepton system, $q^2(\ell\ell)$, and
+thus are ideal probes for the presence of new-physics processes in
+rare decays due to \bsll transitions.
 
 Results related to lepton universality from the CMS
 experiment~\cite{cms-expt} are thus far limited: examples include the
@@ -193,7 +201,7 @@ assumed here to be 0.3; and $t_{\textrm{LHC}}$ is the duration of the
 data taking period in 2018, assumed to be $7.8 \times 10^6~\textrm{s}$
 (i.e.~six months of LHC operation with a duty cycle of 50\%). The
 branching fraction for \btokll (\btokstll) is $4.5~(6.7) \times
-10^{-7}$~\cite{}. Hence, assuming a L1 trigger rate of 10~kHz, the
+10^{-7}$~\cite{pdg}. Hence, assuming a L1 trigger rate of 10~kHz, the
 total number of events with a positive L1 decision that contain a
 signal-side \btokll (\btokstll) decay is estimated to be
 ${\approx}4000$ (${\approx}6000$).
@@ -312,14 +320,14 @@ decreases monotonically for the standard physics data streams.
 \label{sec:3}
 
 The DAQ system is able to handle the additional load from the B
-parking stream up to a limitation determined primarily by the transfer
-of the from local storage buffers at Point~5 to tape resources
+parking stream up to a limitation determined primarily by the data
+transfer from local storage buffers at Point~5 to tape resources
 available via the Tier0 centre. The trigger strategy outlined in
 Sec.~\ref{sec:2} delivers a rate of ${\approx}$2~kHz when averaged
 over an LHC fill, which corresponds to a throughput of
 ${\approx}$2\gbs. This throughput, when averaged over a timescale of
 several days, can be sustained without compromising the performance of
-the CMS DAQ system. 
+the CMS DAQ system.
 % , such as filling to capacity the local storage buffers at P5.
 The allocation of higher rates later in the LHC fills helps to
 load-balance the DAQ system.
@@ -501,6 +509,42 @@ analyses in the flavour sector and beyond.
 \begin{thebibliography}{}
 %% Journal Author, Journal \textbf{Volume}, page numbers (year)
 
+\bibitem{rk-lhcb-1} 
+LHCb Collaboration, Phys. Rev. Lett. \textbf{122} 191801 (2019)
+
+%\bibitem{rk-lhcb-2}
+%LHCb Collaboration, Phys. Rev. Lett. \textbf{113} 151601 (2014)
+
+\bibitem{rkst-lhcb-1}
+LHCb Collaboration, JHEP \textbf{08} 055 (2017)
+
+\bibitem{rkst-belle-1}
+Belle Collaboration, BELLE-CONF-1901, arXiv:1904.02440
+
+\bibitem{rd-babar-1}
+BaBar Collaboration, Phys. Rev. Lett. \textbf{109} 101802 (2012)
+
+\bibitem{rd-belle-1}
+Belle  Collaboration, Phys. Rev. D \textbf{92} 072014 (2015)
+
+\bibitem{rd-lhcb-1}
+LHCb Collaboration, Phys. Rev. D \textbf{97} 072013 (2018)
+
+\bibitem{p5prime-lhcb-1}
+LHCb Collaboration, LHCb-PAPER-2020-002, arXiv:2003.04831
+
+%\bibitem{p5prime-lhcb-2}
+%LHCb Collaboration, JHEP \textbf{02} 104 (2016)
+
+%\bibitem{p5prime-lhcb-3}
+%LHCb Collaboration, Phys. Rev. Lett. \textbf{111} 191801 (2013)
+
+\bibitem{p5prime-belle-1}
+Belle Collaboration, BELLE-CONF-1603, arXiv:1604.04042
+
+\bibitem{ang-babar-1}
+BaBar Collaboration, Phys. Rev. D \textbf{93} 052015 (2016)
+
 \bibitem{babar} 
 BaBar Collaboration, Nucl. Instrum. Meth. A \textbf{479} 1 (2002)
 
@@ -511,10 +555,19 @@ Belle Collaboration, Nucl. Instrum. Meth. A \textbf{479} 117 (2002)
 LHCb Collaboration, JINST \textbf{3} S08005 (2008) 
 
 \bibitem{hflav-rdrdst} 
-HFLAV Collaboration, \url{https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/r_dtaunu/rdrds_spring2019.pdf} (2019) 
+HFLAV Collaboration,
+\href{https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/main.shtml}{Semileptonic
+  B Decays} (2019) 
+%https://hflav-eos.web.cern.ch/hflav-eos/semi/spring19/r_dtaunu/rdrds_spring2019.pdf
 
 \bibitem{altmannshofer} 
 W. Altmannshofer \textit{et al}, Phys. Rev. D \textbf{96} 055008 (2017)
+
+\bibitem{theory1}
+S. Descotes-Genon \textit{et al}, JHEP \textbf{06} 092 (2016) 
+
+\bibitem{theory2}
+M. Bordone \textit{et al}, EPJC \textbf{76} 440 (2016) 
 
 \bibitem{cms-expt} 
 CMS Collaboration, JINST \textbf{3} S08004 (2008)
@@ -529,13 +582,20 @@ CMS Collaboration, Phys. Lett. B \textbf{781} 517 (2018)
 CMS Collaboration, JINST \textbf{12} P01020 (2017)
 
 \bibitem{parking-dps} 
-CMS Collaboration, CMS-DP-2012-022, \url{https://cds.cern.ch/record/1480607} (2012)
+CMS Collaboration, \href{https://cds.cern.ch/record/1480607}{CMS-DP-2012-022} (2012)
 
 \bibitem{alphat} 
 CMS Collaboration, Phys. Lett. B \textbf{767} 403 (2017)
 
+\bibitem{pdg} 
+Particle Data Group, Chin. Phys. C, \textbf{40} 100001
+(2016) and 2017 update
+
 \bibitem{bpark-dps} 
-CMS Collaboration, CMS-DP-2019-043, \url{https://cds.cern.ch/record/2704495} (2019)
+CMS Collaboration, \href{https://cds.cern.ch/record/2704495}{CMS-DP-2019-043} (2019)
+
+\bibitem{gsf} 
+W. Adam \textit{et al}, J. Phys. G: Nucl. Part. Phys. \textbf{31} N9 (2005)
 
 \end{thebibliography}
 
