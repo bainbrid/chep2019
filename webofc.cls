@@ -159,7 +159,8 @@
                 top=\woc@top, bottom=\woc@bottom, heightrounded,
                 left=\woc@left, textwidth=\woc@textwidth, columnsep=7mm,
                 marginparwidth=0in, marginparsep=0in,
-                headheight=20.5pt,headsep=16.5pt, nofoot]{geometry}
+                %@@headheight=20.5pt,headsep=16.5pt, nofoot]{geometry}
+                headheight=20.5pt,headsep=16.5pt, footskip=15pt]{geometry}
 \RequirePackage[tbtags]{amsmath}
 \RequirePackage{amssymb}
 \RequirePackage{fancyhdr}
@@ -570,7 +571,7 @@ e-mail: \protect\@email{#1}%
 % real command to typeset introduction
 %
 \renewcommand*\maketitle{%
-  \thispagestyle{firstpage}
+  \thispagestyle{plain} %@@ \thispagestyle{firstpage}
   \ifwoc@twocolumn
   \begingroup
     \renewcommand*\thefootnote{\@fnsymbol\c@footnote}%
