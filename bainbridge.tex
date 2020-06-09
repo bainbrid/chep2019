@@ -69,7 +69,7 @@
   unbiased b hadron decays. The CMS trigger and data acquisition
   systems were configured to deliver a custom data stream at an
   average throughput of 2\gbs, which was "parked" prior to
-  reconstruction. The data stream was defined by Level-1 and high
+  reconstruction. The data stream was defined by level-1 and high
   level trigger algorithms that operated at peak trigger rates in
   excess of 50 and 5~kHz, respectively. New algorithms have been
   developed to reconstruct and identify electrons with high efficiency
@@ -137,19 +137,20 @@ taking period in 2018, which has enabled the accumulation and
 reconstruction of 10~B unbiased b hadron decays from which the
 measurements of \rk and \rkst may be derived. The data streams that
 serve the core physics programme of CMS are promptly reconstructed at
-the CERN Tier0 data centre, and are generally available within 48
-hours for physics analysis. The new data stream has a trigger rate of
-several kHz, which is beyond the standard processing capabilities of
-the Tier0 centre. However, the trigger and data acquisition (DAQ)
-systems have the ability to record nonstandard parked data streams to
-extend the CMS physics programme~\cite{parking-dps}. These data
-streams, typically defined by relaxed inclusive trigger requirements,
-are not processed immediately by the CMS reconstruction software.
-Instead, the data are temporarily stored in local buffers at Point~5
-before being transferred---unprocessed---to permanent tape storage.
-These data streams are processed at a later point in time, e.g.~during
-an end-of-year or long shutdown of the LHC. The parked data streams
-serve analyses with complementary or extended coverage
+the CERN Tier-0 data centre~\cite{tierzero}, and are generally
+available within 48 hours for physics analysis. The new data stream
+has a trigger rate of several kHz, which is beyond the standard
+processing capabilities of the Tier-0 centre. However, the trigger and
+data acquisition (DAQ) systems have the ability to record nonstandard
+parked data streams to extend the CMS physics
+programme~\cite{parking-dps}. These data streams, typically defined by
+relaxed inclusive trigger requirements, are not processed immediately
+by the CMS reconstruction software.  Instead, the data are temporarily
+stored in local buffers at Point~5 before being
+transferred---unprocessed---to permanent tape storage.  These data
+streams are processed at a later point in time, e.g.~during an
+end-of-year or long shutdown of the LHC. The parked data streams serve
+analyses with complementary or extended coverage
 (e.g.~Ref.~\cite{alphat}) with respect to the core CMS physics
 programme.
 
@@ -450,18 +451,18 @@ regime, has been developed for the B parking data set. As for the
 standard CMS electron algorithm, the determination of the
 charged-particle track parameters for electron candidates, in the
 presence of bremsstrahlung energy loss, relies on the use of a
-Gaussian sum filter (GSF) approach~\cite{}. The "GSF tracking" stage
-is computationally expensive, and therefore it is seeded by a more
-computationally efficient logic that identifies potential electron
-candidates. The trajectory of each GSF track is used to identify a
-compatible "seed" cluster of energy in the CMS electromagnetic
-calorimeter. Additional clusters of energy, consistent with the
-bremsstrahlung energy loss pattern of the electron candidate, are
-associated with the seed cluster as part of a "super cluster", which
-can be used with the tracking information to identify genuine electron
-candidates with high efficiency and purity. The right panel of
-Fig.~\ref{fig:3} illustrates the increase in efficiency obtained with
-the new electron reconstruction algorithm with respect to the
+Gaussian sum filter (GSF) approach~\cite{gsf}. The "GSF tracking"
+stage is computationally expensive, and therefore it is seeded by a
+more computationally efficient logic that identifies potential
+electron candidates. The trajectory of each GSF track is used to
+identify a compatible "seed" cluster of energy in the CMS
+electromagnetic calorimeter. Additional clusters of energy, consistent
+with the bremsstrahlung energy loss pattern of the electron candidate,
+are associated with the seed cluster as part of a "super cluster",
+which can be used with the tracking information to identify genuine
+electron candidates with high efficiency and purity. The right panel
+of Fig.~\ref{fig:3} illustrates the increase in efficiency obtained
+with the new electron reconstruction algorithm with respect to the
 standard algorithm with only minimal identification quality criteria
 applied.
 
@@ -579,6 +580,9 @@ CMS Collaboration, Phys. Lett. B \textbf{781} 517 (2018)
 
 \bibitem{cms-trigger} 
 CMS Collaboration, JINST \textbf{12} P01020 (2017)
+
+\bibitem{tierzero} 
+CMS Collaboration, \href{https://cds.cern.ch/record/838359}{CERN-LHCC-2005-023} (2005)
 
 \bibitem{parking-dps} 
 CMS Collaboration, \href{https://cds.cern.ch/record/1480607}{CMS-DP-2012-022} (2012)
